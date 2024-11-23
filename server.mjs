@@ -1,7 +1,8 @@
 import express from 'express';
 import cors from "cors";
 //for the .env file
-//import dotenv from 'dotenv';
+import dotenv from 'dotenv';
+import cors from 'cors';
 
 const app = express();
 //const port = 4000;
