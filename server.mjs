@@ -1,10 +1,21 @@
 import express from 'express';
 //for the .env file
-//import 'dotenv/config';
+import dotenv from 'dotenv';
 
 const app = express();
-const port = 4000;
+//const port = 4000;
 
+app.use(
+    cors({
+      origin: [
+        "http://localhost:4000",
+        "https://backend-927c.onrender.com",
+        "https://frontend-9vuf.onrender.com",
+      ], // Replace with your frontend's origin
+    })
+  );
+
+dotenv.config();
 //get the request 
 app.get("/api", (req, res) => {
     //get the query for the api search
