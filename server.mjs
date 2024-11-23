@@ -41,4 +41,4 @@ fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + keyword + 
 })
 
 //log that it's running properly
-app.listen(4000, () => console.log(`Server running on port ${port}`));
+app.listen(4000, () => console.log(`Server running on port 4000`));
