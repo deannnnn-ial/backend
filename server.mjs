@@ -1,6 +1,6 @@
 import express from 'express';
 //for the .env file
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 
 const app = express();
 //const port = 4000;
@@ -15,7 +15,7 @@ app.use(
     })
   );
 
-dotenv.config();
+//dotenv.config();
 //get the request 
 app.get("/api", (req, res) => {
     //get the query for the api search
